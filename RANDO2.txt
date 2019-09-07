@@ -1,0 +1,15 @@
+Quest: RANDO2
+DisplayName: Dungeon Randomizer, Part 2
+-- Message panels
+QRC:
+
+QBN:
+
+Clock _delay_ 0:00
+
+--	Quest start-up:
+    start timer _delay_
+
+_delay_ task:
+    start quest RANDO3
+    end quest

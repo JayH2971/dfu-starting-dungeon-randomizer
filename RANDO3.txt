@@ -1,0 +1,17 @@
+Quest: RANDO3
+DisplayName: Dungeon Randomizer, Part 3
+-- Message panels
+QRC:
+
+QBN:
+
+Place _dung_ remote dungeon
+
+Clock _delay_ 0:00
+
+--	Quest start-up:
+    start timer _delay_
+
+_delay_ task:
+    teleport pc to _dung_
+    end quest

@@ -1,0 +1,68 @@
+Quest: RANDO1
+DisplayName: Dungeon Randomizer, Part 1
+-- Message panels
+QRC:
+
+QBN:
+
+Place _wayrest_ permanent WoodbourneHall4
+Place _sentinel_ permanent SentinelCastle
+Place _ykalon_ permanent LlugwychCastle
+Place _balfiera_ permanent DirenniTower2
+Place _dragontail_ permanent ScourgBarrow1
+Place _wrothgaria_ permanent Shedungent1
+Place _betony_ permanent Tristore_Laboratory1
+Place _menevia_ permanent LysandusTomb1
+Place _orsinium_ permanent OrsiniumCastle1
+
+--	Quest start-up:
+    pick one of _way_ _sen_ _yka_ _bal_ _dra_ _wro_ _bet_ _dag_ _men_ _ors_
+
+_way_ task:
+    teleport pc to _wayrest_
+    start quest RANDO2
+    end quest
+
+_sen_ task:
+    teleport pc to _sentinel_
+    start quest RANDO2
+    end quest
+
+_yka_ task:
+    teleport pc to _ykalon_
+    start quest RANDO2
+    end quest
+    
+_bal_ task:
+    teleport pc to _balfiera_
+    start quest RANDO2
+    end quest
+
+_dra_ task:
+    teleport pc to _dragontail_
+    start quest RANDO2
+    end quest
+
+_wro_ task:
+    teleport pc to _wrothgaria_
+    start quest RANDO2
+    end quest
+
+_bet_ task:
+    teleport pc to _betony_
+    start quest RANDO2
+    end quest
+
+_dag_ task:
+    start quest RANDO2
+    end quest
+
+_men_ task:
+    teleport pc to _menevia_
+    start quest RANDO2
+    end quest
+
+_ors_ task:
+    teleport pc to _orsinium_
+    start quest RANDO2
+    end quest
