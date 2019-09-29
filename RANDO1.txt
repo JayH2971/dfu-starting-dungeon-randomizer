@@ -3,6 +3,10 @@ DisplayName: Dungeon Randomizer, Part 1
 -- Message panels
 QRC:
 
+Message: 1010
+<ce>  Starting Dungeon Randomizer is installed.
+<ce>  Do you want to be sent to a random dungeon?
+
 QBN:
 
 Place _wayrest_ permanent WoodbourneHall4
@@ -16,6 +20,12 @@ Place _menevia_ permanent LysandusTomb1
 Place _orsinium_ permanent OrsiniumCastle1
 
 --	Quest start-up:
+    prompt 1010 yes _tele_ no _quit_
+
+_quit_ task:
+    end quest
+
+_tele_ task:
     pick one of _way_ _sen_ _yka_ _bal_ _dra_ _wro_ _bet_ _dag_ _men_ _ors_
 
 _way_ task:
